@@ -1,0 +1,49 @@
+                           
+
+
+                                                E-CART BACKEND NOTES
+
+                                               Node Server Creation    
+                                          -------------------------------      
+     
+
+
+
+    1. Create a new folder in the E-CART  (folder-name = ecart-backend)
+    2. Create a package.json file - npm init  or npm init -y 
+                        Package.json gives a brief note about the project and third party libraries
+    3. Install express and some other
+       ->npm i express cors mongoose dotenv
+                ->Express is a nodejs framework and It create an appllication in backend
+
+       ->cors
+              ->Used to connect two different ports (frontend - 4200 and backend -5000)
+
+       ->mongoose
+               ->This library is used to connect node  and mongodb
+
+       ->dotenv  (.env)
+           ->it is a environmental variables 
+           ->They are used to store app secrets and configuration                                        
+
+    4. Create a .gitignore file
+
+     
+                          use of json() method -> Change the object into array
+ 
+    5. Create a index.js (main entry point) and run the file
+
+
+=====================================================================================================================================================
+
+                                     
+                                      Mongo Db Atlas configuration
+                         ---------------------------------------------------             
+
+    6.  Add connection string to .env fle                      
+    7.  Create a conection.js file for connect node and mongodb
+    8.  Use mongoose to connect mongodb with node application 
+    9.  Import connection.js in index.js
+    10. Create Model/Collection to store products - model/productSchema.js and export it 
+    11. To define routes for client requests - routes/router.js
+    12. To create Controller folder inorder to define the logic to resolve the API requests 
